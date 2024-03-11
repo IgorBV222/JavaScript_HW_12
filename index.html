@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW_12 Обработка legacy формы</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <form id="add-message">
+		<h3 class="form-header">Add new message:</h3>
+
+		<div class="field">
+			<label for="username">Your name:</label>
+			<input type="text" name="username" id="username" required>
+		</div>
+
+		<div class="field">
+			<label for="username">Your message:</label>
+			<textarea name="usermessage" id="usermessage" required></textarea>
+		</div>
+
+		<div class="btn-container">
+			<button id="send-message" type="submit">Send</button>
+		</div>
+		
+	</form>
+
+
+	<div class="chat-body">
+		<h3 class="chat-header">Messages:</h3>
+		<p id="empty-chat">There are no messages</p>
+		<div id="messages-container">
+			<!-- Place to messages -->
+		</div>
+	</div>
+
+    <script src="scripts/index.js"></script>
+</body>
+</html>
